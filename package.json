@@ -3,5 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Kieran Roberts <kieran6roberts@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run snowpack dev",
+    "build": "yarn run snowpack build"
+  },
+  "devDependencies": {
+    "snowpack": "^3.2.2"
+  }
 }
