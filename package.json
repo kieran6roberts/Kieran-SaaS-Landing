@@ -6,9 +6,11 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn run snowpack dev",
-    "build": "yarn run snowpack build"
+    "build": "yarn run snowpack build",
+    "sass": "sass --watch src/main.scss src/main.css"
   },
   "devDependencies": {
+    "sass": "^1.32.8",
     "snowpack": "^3.2.2"
   }
 }
