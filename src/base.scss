@@ -1,9 +1,17 @@
 @import "./variables.scss";
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
 h1 {
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
   font-weight: 700;
-  margin-bottom: var(--space-lg);
 }
 
 h2 {
@@ -17,7 +25,7 @@ h3 {
 }
 
 a {
-  display: block;
+  font-size: var(--text-xs);
 }
 
 button,
@@ -34,4 +42,9 @@ button {
 li::marker {
   color: var(--color-primary);
   content: "*";
+}
+
+p {
+  color: var(--color-off-text);
+  font-size: var(--text-sm);
 }

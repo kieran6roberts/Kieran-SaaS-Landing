@@ -1,38 +1,45 @@
 :root {
   --color-primary: #6718f2;
   --color-secondary: hsl(262, 89%, 62%);
-  --color-faded: hsl(262, 89%, 95%);
+  --color-faded: hsl(259, 100%, 97%);
   --color-bg: #ffffff;
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
-  --color-off-text: hsl(0, 0%, 20%);
+  --color-off-text: hsl(0, 0%, 25%);
 
-  --text-base: 1.1rem;
-  --text-scale: 1.2;
+  --text-base: 1rem;
+  --text-scale: 1.15;
 
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
-    2vw,
+    1.5vw,
     calc(var(--text-base) * var(--text-scale) * 1.5)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
-    3vw,
+    2vw,
     calc(var(--text-xs) * var(--text-scale) * 2)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
-    4vw,
+    3vw,
     calc(var(--text-sm) * var(--text-scale) * 2.5)
   );
   --text-lg: clamp(
     calc(var(--text-md) * var(--text-scale)),
-    5vw,
+    4vw,
     calc(var(--text-md) * var(--text-scale) * 3)
+  );
+  --text-xl: clamp(
+    calc(var(--text-lg) * var(--text-scale) * 1),
+    3vw,
+    calc(var(--text-lg) * var(--text-scale) * 1)
   );
 
   --border-radius-full: 0.6rem;
   --border-radius-half: 0.3rem;
+  --border-thick: 4px solid var(--color-primary);
+  --border-thin: 2px solid var(--color-primary);
 
   --space-scale: 1em;
   --space-3xs: calc(0.25 * var(--space-scale));

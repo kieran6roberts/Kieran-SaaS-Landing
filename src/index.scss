@@ -1,0 +1,142 @@
+@use "./mixins.scss" as m;
+@import "./variables.scss";
+
+.nav {
+  background-color: var(--color-primary);
+  display: flex;
+  padding: var(--space-xs) var(--space-md);
+
+  @media only screen and (min-width: "1150px") {
+    padding: var(--space-xs) var(--space-xl);
+  }
+
+  &__logo {
+    color: var(--color-bg);
+
+    &:hover {
+      @include m.hover-primary;
+    }
+  }
+
+  &__logo,
+  &__link {
+    display: block;
+    padding: var(--space-3xs) var(--space-sm);
+  }
+
+  &__items {
+    display: none;
+    margin-left: auto;
+    visibility: hidden;
+
+    @media only screen and (min-width: "768px") {
+      display: flex;
+      visibility: visible;
+    }
+  }
+
+  &__item {
+    &:first-child {
+      &:hover {
+        @include m.hover-primary;
+
+        .nav__link {
+          color: var(--color-off-bg);
+        }
+      }
+    }
+
+    &:last-child {
+      background-color: var(--color-bg);
+      margin-left: var(--space-xl);
+
+      &:hover {
+        @include m.hover-secondary;
+
+        .nav__link {
+          color: var(--color-primary);
+        }
+      }
+    }
+
+    .link-login {
+      color: var(--color-bg);
+    }
+
+    .link-account {
+      color: var(--color-secondary);
+    }
+  }
+
+  &__link {
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}
+
+.background {
+  position: absolute;
+  z-index: -10;
+}
+
+.hero {
+  display: flex;
+  padding: 0 var(--space-md);
+
+  @media only screen and (min-width: 1150px) {
+  }
+
+  &__image {
+    display: none;
+    visibility: none;
+
+    @media only screen and (min-width: 1175px) {
+      display: inline-block;
+      margin-right: var(--space-sm);
+      margin-left: var(--space-xl);
+      visibility: visible;
+    }
+  }
+
+  &__content {
+    margin: 0 var(--space-lg);
+    padding-top: var(--space-xl);
+  }
+
+  &__heading {
+    margin-bottom: var(--space-sm);
+  }
+
+  &__description {
+    margin-bottom: var(--space-xl);
+  }
+
+  &__cta {
+    padding: var(--space-sm) var(--space-xl);
+    text-transform: capitalize;
+
+    &:first-of-type {
+      @include m.link-secondary;
+      margin-right: var(--space-xl);
+
+      &:hover {
+        @include m.hover-secondary;
+      }
+    }
+
+    &:last-of-type {
+      display: none;
+      visibility: hidden;
+
+      &:hover {
+        @include m.hover-primary;
+      }
+
+      @media only screen and (min-width: 568px) {
+        @include m.link-primary;
+        display: inline-block;
+        visibility: visible;
+      }
+    }
+  }
+}
