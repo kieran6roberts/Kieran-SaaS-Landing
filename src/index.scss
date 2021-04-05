@@ -2,6 +2,7 @@
 @import "./variables.scss";
 
 .nav {
+  align-items: center;
   background-color: var(--color-primary);
   display: flex;
   padding: var(--space-xs) var(--space-md);
@@ -71,6 +72,45 @@
   &__link {
     font-weight: 600;
     text-transform: capitalize;
+  }
+
+  &__mobile {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 1.6rem;
+    margin-left: auto;
+    position: relative;
+    width: 1.6rem;
+    visibility: visible;
+
+    @media only screen and (min-width: 768px) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &__mobile--span {
+    background-color: var(--color-bg);
+    display: block;
+    height: 0.1rem;
+    width: 100%;
+  }
+
+  &__mobile--check {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+
+    &:checked ~ .sidebar {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 }
 

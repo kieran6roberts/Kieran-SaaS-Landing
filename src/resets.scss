@@ -34,6 +34,10 @@ select {
   font: inherit;
 }
 
+button {
+  border: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms;
