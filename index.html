@@ -17,7 +17,69 @@
     <title>Kieran's SaaS Landing</title>
 </head>
 <body>
-    <h1>Title</h1>
-    <p>Some text to test spacing</p>
+    <nav 
+    aria-label="main-navigation" 
+    class="nav"
+    >
+        <a 
+        aria-label="Home Page"
+        class="nav__logo"
+        href="/"
+        >
+            brand
+        </a>
+        <ul class="nav__items">
+            <li class="nav__item">
+                <a 
+                class="nav__link link-login"
+                href="/"
+                >
+                    login
+                </a>
+            </li>
+            <li class="nav__item">
+                <a 
+                class="nav__link link-account"
+                href="/">
+                    create account
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <img 
+    alt="background half oval shape in a feint brand purple color" 
+    class="background" 
+    src="./public/images/header.svg"
+    >
+    <header class="hero">
+        <img
+        alt="illustration character setting off on adventure towards the mountains with a backpack"
+        class="hero__image"
+        height="525px"
+        src="./public/images/undraw-landscape.svg"
+        width="525px"
+        >
+        <div class="hero__content">
+            <h1 class="hero__heading">
+                Some inspirational header goes here
+            </h1>
+            <p class="hero__description">
+                This is the longer description that gives the viewer the overview of the main features of whatever it is I’m trying to
+                sell to everyone. Join us!
+            </p>
+            <a 
+            class="hero__cta"
+            href="/"
+            >
+                learn more
+            </a>
+            <a
+            class="hero__cta" 
+            href="/"
+            >
+                somewhere
+            </a>
+        </div>
+    </header>
 </body>
 </html>

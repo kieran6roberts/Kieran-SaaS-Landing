@@ -1,9 +1,17 @@
 @import "./variables.scss";
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+}
+
 h1 {
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
   font-weight: 700;
-  margin-bottom: var(--space-lg);
 }
 
 h2 {
@@ -16,7 +24,27 @@ h3 {
   font-weight: 600;
 }
 
+a {
+  font-size: var(--text-xs);
+}
+
+button,
+li,
+a {
+  border-radius: var(--border-radius-full);
+}
+
 button {
   font-size: var(--text-md);
   font-weight: 500;
+}
+
+li::marker {
+  color: var(--color-primary);
+  content: "*";
+}
+
+p {
+  color: var(--color-off-text);
+  font-size: var(--text-sm);
 }

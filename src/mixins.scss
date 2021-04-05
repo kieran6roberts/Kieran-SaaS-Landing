@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+@mixin link-primary {
+  background-color: var(--color-primary);
+  border: var(--border-thin);
+  color: var(--color-bg);
+}
+
+@mixin link-secondary {
+  background-color: var(--color-bg);
+  border: var(--border-thin);
+  color: var(--color-primary);
+}
+
+@mixin hover-primary {
+  background-color: var(--color-secondary);
+  transition: all 100ms ease-in-out;
+}
+
+@mixin hover-secondary {
+  background-color: var(--color-off-bg);
+  transition: all 100ms ease-in-out;
+}
