@@ -1,0 +1,17 @@
+:root {
+  --color-primary: #6718f2;
+  --color-secondary: hsl(262, 89%, 62%);
+  --color-faded: hsl(262, 89%, 95%);
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-off-text: hsl(0, 0%, 20%);
+
+  --text-scale: 1.3;
+  --text-xs: calc(1rem * var(--text-scale));
+  --text-sm: calc(var(--text-xs) * var(--text-scale));
+  --text-md: calc(var(--text-sm) * var(--text-scale));
+  --text-lg: calc(var(--text-md) * var(--text-scale));
+
+  --border-radius-full: "1rem";
+  --border-radius-half: "0.5rem";
+}
