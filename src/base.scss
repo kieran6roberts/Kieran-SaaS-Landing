@@ -16,7 +16,22 @@ h3 {
   font-weight: 600;
 }
 
+a {
+  display: block;
+}
+
+button,
+li,
+a {
+  border-radius: var(--border-radius-full);
+}
+
 button {
   font-size: var(--text-md);
   font-weight: 500;
+}
+
+li::marker {
+  color: var(--color-primary);
+  content: "*";
 }

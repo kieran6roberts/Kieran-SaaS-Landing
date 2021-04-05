@@ -3,6 +3,7 @@
   --color-secondary: hsl(262, 89%, 62%);
   --color-faded: hsl(262, 89%, 95%);
   --color-bg: #ffffff;
+  --color-off-bg: #f3f1f1;
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 20%);
 
@@ -30,8 +31,8 @@
     calc(var(--text-md) * var(--text-scale) * 3)
   );
 
-  --border-radius-full: "1rem";
-  --border-radius-half: "0.5rem";
+  --border-radius-full: 0.6rem;
+  --border-radius-half: 0.3rem;
 
   --space-scale: 1em;
   --space-3xs: calc(0.25 * var(--space-scale));
