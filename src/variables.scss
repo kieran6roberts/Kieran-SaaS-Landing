@@ -43,4 +43,9 @@
   --space-xl: calc(3.25 * var(--space-scale));
   --space-2xl: calc(5.25 * var(--space-scale));
   --space-3xl: calc(8.5 * var(--space-scale));
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
