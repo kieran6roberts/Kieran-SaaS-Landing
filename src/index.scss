@@ -238,3 +238,60 @@
     }
   }
 }
+
+.main {
+  height: 2000px;
+  margin-top: var(--space-xl);
+  position: relative;
+}
+
+.service {
+  &__wrapper {
+    height: 500px;
+    position: relative;
+
+    &:first-of-type,
+    &:last-of-type {
+      text-align: end;
+    }
+  }
+
+  &__article {
+    align-content: center;
+    display: grid;
+    height: 100%;
+    min-width: 500px;
+    padding: 0 var(--space-xl);
+    width: 60%;
+
+    &:first-child,
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+
+  .middle-article {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  &__sub-header {
+    color: var(--color-primary);
+    margin-bottom: var(--space-sm);
+  }
+
+  &__main-header {
+    margin-bottom: var(--space-md);
+  }
+
+  &__background {
+    position: absolute;
+    z-index: -10;
+  }
+
+  .bg-1,
+  .bg-3 {
+    right: 0;
+    transform: scaleX(-1);
+  }
+}

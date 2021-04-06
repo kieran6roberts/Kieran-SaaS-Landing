@@ -581,4 +581,49 @@ p {
   }
 }
 
+.main {
+  height: 2000px;
+  margin-top: var(--space-xl);
+  position: relative;
+}
+
+.service__wrapper {
+  height: 500px;
+  position: relative;
+}
+.service__wrapper:first-of-type, .service__wrapper:last-of-type {
+  text-align: end;
+}
+.service__article {
+  align-content: center;
+  display: grid;
+  height: 100%;
+  min-width: 500px;
+  padding: 0 var(--space-xl);
+  width: 60%;
+}
+.service__article:first-child, .service__article:last-child {
+  margin-left: auto;
+}
+.service .middle-article {
+  margin-right: auto;
+  margin-left: 0;
+}
+.service__sub-header {
+  color: var(--color-primary);
+  margin-bottom: var(--space-sm);
+}
+.service__main-header {
+  margin-bottom: var(--space-md);
+}
+.service__background {
+  position: absolute;
+  z-index: -10;
+}
+.service .bg-1,
+.service .bg-3 {
+  right: 0;
+  transform: scaleX(-1);
+}
+
 /*# sourceMappingURL=main.css.map */
