@@ -26,6 +26,7 @@ h3 {
 
 a {
   font-size: var(--text-xs);
+  font-weight: 600;
 }
 
 button,
@@ -37,11 +38,6 @@ a {
 button {
   font-size: var(--text-md);
   font-weight: 500;
-}
-
-li::marker {
-  color: var(--color-primary);
-  content: "*";
 }
 
 p {

@@ -27,13 +27,13 @@
   );
   --text-lg: clamp(
     calc(var(--text-md) * var(--text-scale)),
-    4vw,
+    3.5vw,
     calc(var(--text-md) * var(--text-scale) * 3)
   );
   --text-xl: clamp(
-    calc(var(--text-lg) * var(--text-scale) * 1),
+    calc(var(--text-lg) * var(--text-scale)),
     3vw,
-    calc(var(--text-lg) * var(--text-scale) * 1)
+    calc(var(--text-lg) * var(--text-scale) * 4)
   );
 
   --border-radius-full: 0.6rem;

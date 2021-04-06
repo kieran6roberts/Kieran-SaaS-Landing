@@ -1,11 +1,12 @@
 @use "./mixins.scss" as m;
 @import "./variables.scss";
 
+// main nav
 .nav {
   align-items: center;
   background-color: var(--color-primary);
   display: flex;
-  padding: var(--space-xs) var(--space-md);
+  padding: var(--space-xs) var(--space-lg);
 
   @media only screen and (min-width: "1150px") {
     padding: var(--space-xs) var(--space-xl);
@@ -37,6 +38,17 @@
   }
 
   &__item {
+    color: var(--color-primary);
+    content: "*";
+
+    &__link {
+      visibility: hidden;
+
+      @media only screen and (min-width: "768px") {
+        visibility: visible;
+      }
+    }
+
     &:first-child {
       &:hover {
         @include m.hover-primary;
@@ -81,11 +93,12 @@
     justify-content: space-evenly;
     height: 1.6rem;
     margin-left: auto;
+    margin-right: var(--space-sm);
     position: relative;
     width: 1.6rem;
     visibility: visible;
 
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: "768px") {
       display: none;
       visibility: hidden;
     }
@@ -100,37 +113,82 @@
 
   &__mobile--check {
     cursor: pointer;
-    height: 100%;
-    left: 0;
-    top: 0;
+    height: 1.6rem;
+    right: 1.9rem;
+    top: 0.8rem;
     position: absolute;
     opacity: 0;
-    width: 100%;
+    width: 1.8rem;
+
+    @media only screen and (min-width: "768px") {
+      display: none;
+      visibility: hidden;
+    }
 
     &:checked ~ .sidebar {
-      opacity: 1;
-      transform: translateX(0);
+      transform: translateY(0%);
     }
   }
 }
 
+// mobile nav
+.sidebar {
+  background-color: var(--color-bg);
+  padding: var(--space-sm) 0;
+  position: absolute;
+  top: 3.2rem;
+  left: 0;
+  right: 0;
+  transform: translateY(-150%);
+
+  @media only screen and (min-width: "768px") {
+    display: none;
+    visibility: hidden;
+  }
+
+  &__items {
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+    width: 40%;
+  }
+
+  &__item {
+    @include m.link-secondary;
+    color: var(--color-bg);
+    content: "*";
+    margin: var(--space-sm) 0;
+
+    &:hover {
+      @include m.hover-secondary;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: var(--space-xs) var(--space-md);
+  }
+}
+
+// hero background shape
 .background {
   position: absolute;
   z-index: -10;
 }
 
 .hero {
-  display: flex;
   padding: 0 var(--space-md);
 
-  @media only screen and (min-width: 1150px) {
+  @media only screen and (min-width: "1175px") {
+    display: grid;
+    grid-template-columns: 45% 55%;
   }
 
   &__image {
     display: none;
     visibility: none;
 
-    @media only screen and (min-width: 1175px) {
+    @media only screen and (min-width: "1175px") {
       display: inline-block;
       margin-right: var(--space-sm);
       margin-left: var(--space-xl);
@@ -172,7 +230,7 @@
         @include m.hover-primary;
       }
 
-      @media only screen and (min-width: 568px) {
+      @media only screen and (min-width: "568px") {
         @include m.link-primary;
         display: inline-block;
         visibility: visible;
