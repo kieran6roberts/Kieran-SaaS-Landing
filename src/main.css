@@ -1,7 +1,7 @@
 :root {
   --color-primary: #6718f2;
   --color-secondary: hsl(262, 89%, 62%);
-  --color-faded: hsl(259, 100%, 97%);
+  --color-faded: hsl(262, 100%, 98%);
   --color-bg: #ffffff;
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
@@ -10,27 +10,27 @@
   --text-scale: 1.15;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
-    1.5vw,
+    1.2vw,
     calc(var(--text-base) * var(--text-scale) * 1.5)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
-    2vw,
-    calc(var(--text-xs) * var(--text-scale) * 2)
+    1.5vw,
+    calc(var(--text-xs) * var(--text-scale) * 1.8)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
-    3vw,
-    calc(var(--text-sm) * var(--text-scale) * 2.5)
+    2.3vw,
+    calc(var(--text-sm) * var(--text-scale) * 2.3)
   );
   --text-lg: clamp(
     calc(var(--text-md) * var(--text-scale)),
-    3.5vw,
-    calc(var(--text-md) * var(--text-scale) * 3)
+    3.2vw,
+    calc(var(--text-md) * var(--text-scale) * 2.8)
   );
   --text-xl: clamp(
     calc(var(--text-lg) * var(--text-scale)),
-    3vw,
+    4vw,
     calc(var(--text-lg) * var(--text-scale) * 4)
   );
   --border-radius-full: 0.6rem;
@@ -46,7 +46,7 @@
   --space-lg: calc(1.25 * var(--space-scale));
   --space-xl: calc(3.25 * var(--space-scale));
   --space-2xl: calc(5.25 * var(--space-scale));
-  --space-3xl: calc(8.5 * var(--space-scale));
+  --space-3xl: calc(10 * var(--space-scale));
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -101,7 +101,7 @@ button {
 :root {
   --color-primary: #6718f2;
   --color-secondary: hsl(262, 89%, 62%);
-  --color-faded: hsl(259, 100%, 97%);
+  --color-faded: hsl(262, 100%, 98%);
   --color-bg: #ffffff;
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
@@ -110,27 +110,27 @@ button {
   --text-scale: 1.15;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
-    1.5vw,
+    1.2vw,
     calc(var(--text-base) * var(--text-scale) * 1.5)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
-    2vw,
-    calc(var(--text-xs) * var(--text-scale) * 2)
+    1.5vw,
+    calc(var(--text-xs) * var(--text-scale) * 1.8)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
-    3vw,
-    calc(var(--text-sm) * var(--text-scale) * 2.5)
+    2.3vw,
+    calc(var(--text-sm) * var(--text-scale) * 2.3)
   );
   --text-lg: clamp(
     calc(var(--text-md) * var(--text-scale)),
-    3.5vw,
-    calc(var(--text-md) * var(--text-scale) * 3)
+    3.2vw,
+    calc(var(--text-md) * var(--text-scale) * 2.8)
   );
   --text-xl: clamp(
     calc(var(--text-lg) * var(--text-scale)),
-    3vw,
+    4vw,
     calc(var(--text-lg) * var(--text-scale) * 4)
   );
   --border-radius-full: 0.6rem;
@@ -146,7 +146,7 @@ button {
   --space-lg: calc(1.25 * var(--space-scale));
   --space-xl: calc(3.25 * var(--space-scale));
   --space-2xl: calc(5.25 * var(--space-scale));
-  --space-3xl: calc(8.5 * var(--space-scale));
+  --space-3xl: calc(10 * var(--space-scale));
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -155,7 +155,7 @@ button {
 :root {
   --color-primary: #6718f2;
   --color-secondary: hsl(262, 89%, 62%);
-  --color-faded: hsl(259, 100%, 97%);
+  --color-faded: hsl(262, 100%, 98%);
   --color-bg: #ffffff;
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
@@ -164,27 +164,27 @@ button {
   --text-scale: 1.15;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
-    1.5vw,
+    1.2vw,
     calc(var(--text-base) * var(--text-scale) * 1.5)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
-    2vw,
-    calc(var(--text-xs) * var(--text-scale) * 2)
+    1.5vw,
+    calc(var(--text-xs) * var(--text-scale) * 1.8)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
-    3vw,
-    calc(var(--text-sm) * var(--text-scale) * 2.5)
+    2.3vw,
+    calc(var(--text-sm) * var(--text-scale) * 2.3)
   );
   --text-lg: clamp(
     calc(var(--text-md) * var(--text-scale)),
-    3.5vw,
-    calc(var(--text-md) * var(--text-scale) * 3)
+    3.2vw,
+    calc(var(--text-md) * var(--text-scale) * 2.8)
   );
   --text-xl: clamp(
     calc(var(--text-lg) * var(--text-scale)),
-    3vw,
+    4vw,
     calc(var(--text-lg) * var(--text-scale) * 4)
   );
   --border-radius-full: 0.6rem;
@@ -200,7 +200,7 @@ button {
   --space-lg: calc(1.25 * var(--space-scale));
   --space-xl: calc(3.25 * var(--space-scale));
   --space-2xl: calc(5.25 * var(--space-scale));
-  --space-3xl: calc(8.5 * var(--space-scale));
+  --space-3xl: calc(10 * var(--space-scale));
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -254,7 +254,7 @@ p {
 :root {
   --color-primary: #6718f2;
   --color-secondary: hsl(262, 89%, 62%);
-  --color-faded: hsl(259, 100%, 97%);
+  --color-faded: hsl(262, 100%, 98%);
   --color-bg: #ffffff;
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
@@ -263,27 +263,27 @@ p {
   --text-scale: 1.15;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
-    1.5vw,
+    1.2vw,
     calc(var(--text-base) * var(--text-scale) * 1.5)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
-    2vw,
-    calc(var(--text-xs) * var(--text-scale) * 2)
+    1.5vw,
+    calc(var(--text-xs) * var(--text-scale) * 1.8)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
-    3vw,
-    calc(var(--text-sm) * var(--text-scale) * 2.5)
+    2.3vw,
+    calc(var(--text-sm) * var(--text-scale) * 2.3)
   );
   --text-lg: clamp(
     calc(var(--text-md) * var(--text-scale)),
-    3.5vw,
-    calc(var(--text-md) * var(--text-scale) * 3)
+    3.2vw,
+    calc(var(--text-md) * var(--text-scale) * 2.8)
   );
   --text-xl: clamp(
     calc(var(--text-lg) * var(--text-scale)),
-    3vw,
+    4vw,
     calc(var(--text-lg) * var(--text-scale) * 4)
   );
   --border-radius-full: 0.6rem;
@@ -299,7 +299,7 @@ p {
   --space-lg: calc(1.25 * var(--space-scale));
   --space-xl: calc(3.25 * var(--space-scale));
   --space-2xl: calc(5.25 * var(--space-scale));
-  --space-3xl: calc(8.5 * var(--space-scale));
+  --space-3xl: calc(10 * var(--space-scale));
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -308,7 +308,7 @@ p {
 :root {
   --color-primary: #6718f2;
   --color-secondary: hsl(262, 89%, 62%);
-  --color-faded: hsl(259, 100%, 97%);
+  --color-faded: hsl(262, 100%, 98%);
   --color-bg: #ffffff;
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
@@ -317,27 +317,27 @@ p {
   --text-scale: 1.15;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
-    1.5vw,
+    1.2vw,
     calc(var(--text-base) * var(--text-scale) * 1.5)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
-    2vw,
-    calc(var(--text-xs) * var(--text-scale) * 2)
+    1.5vw,
+    calc(var(--text-xs) * var(--text-scale) * 1.8)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
-    3vw,
-    calc(var(--text-sm) * var(--text-scale) * 2.5)
+    2.3vw,
+    calc(var(--text-sm) * var(--text-scale) * 2.3)
   );
   --text-lg: clamp(
     calc(var(--text-md) * var(--text-scale)),
-    3.5vw,
-    calc(var(--text-md) * var(--text-scale) * 3)
+    3.2vw,
+    calc(var(--text-md) * var(--text-scale) * 2.8)
   );
   --text-xl: clamp(
     calc(var(--text-lg) * var(--text-scale)),
-    3vw,
+    4vw,
     calc(var(--text-lg) * var(--text-scale) * 4)
   );
   --border-radius-full: 0.6rem;
@@ -353,7 +353,7 @@ p {
   --space-lg: calc(1.25 * var(--space-scale));
   --space-xl: calc(3.25 * var(--space-scale));
   --space-2xl: calc(5.25 * var(--space-scale));
-  --space-3xl: calc(8.5 * var(--space-scale));
+  --space-3xl: calc(10 * var(--space-scale));
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-primary: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -587,43 +587,138 @@ p {
   position: relative;
 }
 
+.service {
+  padding-bottom: var(--space-3xl);
+}
 .service__wrapper {
   height: 500px;
   position: relative;
 }
 .service__wrapper:first-of-type, .service__wrapper:last-of-type {
-  text-align: end;
+  text-align: start;
 }
 .service__article {
   align-content: center;
   display: grid;
   height: 100%;
-  min-width: 500px;
   padding: 0 var(--space-xl);
-  width: 60%;
 }
-.service__article:first-child, .service__article:last-child {
-  margin-left: auto;
+@media only screen and (min-width: 900px) {
+  .service__article {
+    width: 60%;
+  }
 }
 .service .middle-article {
-  margin-right: auto;
-  margin-left: 0;
+  margin-left: auto;
 }
 .service__sub-header {
   color: var(--color-primary);
+  font-size: var(--text-xs);
   margin-bottom: var(--space-sm);
 }
 .service__main-header {
+  font-size: var(--text-lg);
   margin-bottom: var(--space-md);
 }
 .service__background {
+  font-size: var(--text-sm);
   position: absolute;
   z-index: -10;
 }
-.service .bg-1,
-.service .bg-3 {
+.service .bg-2 {
   right: 0;
   transform: scaleX(-1);
+}
+
+.background__wrapper {
+  bottom: 12%;
+  right: 0;
+  margin-left: auto;
+  position: absolute;
+  width: 50%;
+  z-index: -10;
+}
+
+.pricing {
+  background-color: var(--color-faded);
+  padding-left: var(--space-xl);
+  padding-top: var(--space-md);
+}
+.pricing__article {
+  max-width: 75%;
+}
+.pricing__sub-header {
+  color: var(--color-primary);
+  font-size: var(--text-xs);
+  margin-bottom: var(--space-sm);
+}
+.pricing__main-header {
+  font-size: var(--text-lg);
+  margin-bottom: var(--space-md);
+}
+.pricing__description {
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-xl);
+}
+
+.price-cards {
+  height: 500px;
+  position: relative;
+}
+.price-cards__bg1, .price-cards__bg2 {
+  background-color: var(--color-faded);
+  height: 50%;
+  padding-top: var(--space-2xl);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -10;
+}
+.price-cards__bg1 {
+  padding-top: var(--space-2xl);
+}
+.price-cards__bg1 {
+  background-color: var(--color-bg);
+}
+.price-cards__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: var(--space-2xl) var(--space-xl);
+}
+.price-cards__tier {
+  margin: auto;
+  padding: var(--space-sm) 0;
+  width: 100%;
+}
+.price-cards__tier-name, .price-cards__tier-price, .price-cards__card-header {
+  text-align: center;
+}
+.price-cards__tier-price, .price-cards__features {
+  margin-bottom: var(--space-sm);
+}
+.price-cards__features {
+  padding-left: var(--space-lg);
+}
+.price-cards__link {
+  display: block;
+  margin-top: var(--space-lg);
+}
+.price-cards .tier-pro {
+  background-color: var(--color-bg);
+  grid-column: span 2;
+  height: 100%;
+}
+.price-cards .tier-basic {
+  background-color: var(--color-faded);
+  height: 80%;
+}
+.price-cards .tier-enterprise {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  height: 80%;
 }
 
 /*# sourceMappingURL=main.css.map */
