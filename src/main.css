@@ -788,4 +788,96 @@ p {
   color: var(--color-bg);
 }
 
+.review__wrapper {
+  align-content: center;
+  background-color: var(--color-primary);
+  display: grid;
+  row-gap: var(--space-xl);
+  padding: var(--space-xl) var(--space-sm) 0;
+  text-align: center;
+}
+.review__header {
+  color: var(--color-bg);
+  font-size: var(--text-xl);
+}
+.review__description {
+  color: var(--color-bg);
+  margin: auto;
+  width: 65%;
+}
+.review__link {
+  background-color: var(--color-bg);
+  border: var(--border-thin);
+  color: var(--color-primary);
+  display: block;
+  margin: auto;
+  padding: var(--space-sm) var(--space-lg);
+  width: max-content;
+}
+.review__link:hover {
+  background-color: var(--color-off-bg);
+  transition: all 100ms ease-in-out;
+}
+.review-me {
+  position: relative;
+  overflow-x: hidden;
+}
+.review-me__name {
+  color: var(--color-bg);
+  padding: var(--space-xl) 0 var(--space-sm);
+  text-align: center;
+}
+@media only screen and (min-width: 900px) {
+  .review-me__name {
+    left: var(--space-xl);
+    position: relative;
+    text-align: left;
+    top: var(--space-xl);
+  }
+}
+.review-me__name-sml {
+  font-size: var(--text-xs);
+  font-weight: 400;
+}
+.review-me__bg1, .review-me__bg2 {
+  height: 50%;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: -10;
+}
+.review-me__bg1 {
+  background-color: var(--color-primary);
+  top: 0;
+}
+.review-me__bg2 {
+  background-color: var(--color-bg);
+  bottom: 0;
+}
+.review-me__image-wrapper {
+  height: 225px;
+  margin: auto;
+  position: relative;
+  width: 225px;
+}
+@media only screen and (min-width: 900px) {
+  .review-me__image-wrapper {
+    left: 25%;
+    margin: 0;
+  }
+}
+.review-me__quote {
+  font-style: italic;
+  padding: var(--space-lg) var(--space-md);
+  width: 100%;
+}
+@media only screen and (min-width: 900px) {
+  .review-me__quote {
+    bottom: 3rem;
+    position: relative;
+    margin-left: auto;
+    width: 50%;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
