@@ -12,8 +12,19 @@
     padding: var(--space-xs) var(--space-xl);
   }
 
+  &__logo-text,
+  &__logo-image {
+    display: block;
+  }
+
+  &__logo-image {
+    margin-right: var(--space-xs);
+  }
+
   &__logo {
     color: var(--color-bg);
+    display: flex;
+    align-items: center;
 
     &:hover {
       @include m.hover-primary;
@@ -22,7 +33,6 @@
 
   &__logo,
   &__link {
-    display: block;
     padding: var(--space-3xs) var(--space-sm);
   }
 
@@ -82,6 +92,7 @@
   }
 
   &__link {
+    display: block;
     font-weight: 600;
     text-transform: capitalize;
   }
@@ -240,13 +251,14 @@
 }
 
 .main {
-  height: 2000px;
   margin-top: var(--space-xl);
   position: relative;
 }
 
 .service {
+  position: relative;
   padding-bottom: var(--space-3xl);
+
   &__wrapper {
     height: 500px;
     position: relative;
@@ -297,7 +309,7 @@
 
 // background 2
 .background__wrapper {
-  bottom: 12%;
+  bottom: -5%;
   right: 0;
   margin-left: auto;
   position: absolute;
@@ -357,7 +369,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: var(--space-2xl) var(--space-xl);
+    padding: var(--space-2xl) var(--space-xl) var(--space-3xl);
   }
 
   &__card-header,
@@ -518,16 +530,21 @@
     position: relative;
     overflow-x: hidden;
 
+    &__wrapper {
+      margin-bottom: var(--space-2xl);
+    }
+
     &__name {
       color: var(--color-bg);
-      padding: var(--space-xl) 0 var(--space-sm);
+      padding: var(--space-xl) 0;
       text-align: center;
 
       @media only screen and (min-width: "900px") {
         left: var(--space-xl);
+        padding: 0;
         position: relative;
         text-align: left;
-        top: var(--space-xl);
+        top: var(--space-2xl);
       }
     }
 
@@ -563,6 +580,7 @@
 
       @media only screen and (min-width: "900px") {
         left: 25%;
+        top: 4.5rem;
         margin: 0;
       }
     }
@@ -570,14 +588,85 @@
     &__quote {
       font-style: italic;
       padding: var(--space-lg) var(--space-md);
-      width: 100%;
 
       @media only screen and (min-width: "900px") {
-        bottom: 3rem;
-        position: relative;
         margin-left: auto;
         width: 50%;
       }
+    }
+  }
+}
+
+// footer
+
+.footer {
+  background-color: var(--color-faded2);
+  display: grid;
+  font-size: var(--text-xs);
+  grid-template-columns: repeat(5, 1fr);
+  height: 250px;
+  padding: var(--space-lg);
+  position: absolute;
+  width: 100%;
+
+  &__brand {
+    display: grid;
+    grid-column: span 5;
+    grid-row: 2;
+    font-size: var(--text-xs);
+    margin: var(--space-lg) 0;
+
+    @media only screen and (min-width: "768px") {
+      grid-column: span 1;
+      grid-row: 1;
+      margin-bottom: 0;
+    }
+  }
+
+  &__brand-text {
+    align-self: flex-end;
+    font-size: 0.7em;
+  }
+
+  &__items {
+    align-self: center;
+    grid-column: span 2;
+    grid-row: 1;
+
+    @media only screen and (min-width: "768px") {
+      grid-column: span 1;
+    }
+  }
+
+  &__items-header {
+    color: var(--color-text);
+    font-size: 0.9em;
+    font-weight: 600;
+  }
+
+  &__item {
+    color: var(--color-faded2);
+    content: "*";
+    margin: var(--space-sm) 0;
+  }
+
+  &__link {
+    color: var(--color-text);
+    font-weight: 400;
+    font-size: 0.8em;
+    text-transform: capitalize;
+  }
+
+  &__illustration {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+
+    @media only screen and (min-width: "900px") {
+      display: block;
+      visibility: visible;
     }
   }
 }
