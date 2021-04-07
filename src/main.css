@@ -1,7 +1,8 @@
 :root {
   --color-primary: #6718f2;
   --color-secondary: hsl(262, 89%, 62%);
-  --color-faded: hsl(262, 100%, 98%);
+  --color-faded: hsl(265, 100%, 96%);
+  --color-faded2: hsl(262, 100%, 98%);
   --color-bg: #ffffff;
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
@@ -101,7 +102,8 @@ button {
 :root {
   --color-primary: #6718f2;
   --color-secondary: hsl(262, 89%, 62%);
-  --color-faded: hsl(262, 100%, 98%);
+  --color-faded: hsl(265, 100%, 96%);
+  --color-faded2: hsl(262, 100%, 98%);
   --color-bg: #ffffff;
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
@@ -155,7 +157,8 @@ button {
 :root {
   --color-primary: #6718f2;
   --color-secondary: hsl(262, 89%, 62%);
-  --color-faded: hsl(262, 100%, 98%);
+  --color-faded: hsl(265, 100%, 96%);
+  --color-faded2: hsl(262, 100%, 98%);
   --color-bg: #ffffff;
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
@@ -254,7 +257,8 @@ p {
 :root {
   --color-primary: #6718f2;
   --color-secondary: hsl(262, 89%, 62%);
-  --color-faded: hsl(262, 100%, 98%);
+  --color-faded: hsl(265, 100%, 96%);
+  --color-faded2: hsl(262, 100%, 98%);
   --color-bg: #ffffff;
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
@@ -308,7 +312,8 @@ p {
 :root {
   --color-primary: #6718f2;
   --color-secondary: hsl(262, 89%, 62%);
-  --color-faded: hsl(262, 100%, 98%);
+  --color-faded: hsl(265, 100%, 96%);
+  --color-faded2: hsl(262, 100%, 98%);
   --color-bg: #ffffff;
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
@@ -640,7 +645,7 @@ p {
 }
 
 .pricing {
-  background-color: var(--color-faded);
+  background-color: var(--color-faded2);
   padding-left: var(--space-xl);
   padding-top: var(--space-md);
 }
@@ -662,63 +667,125 @@ p {
 }
 
 .price-cards {
-  height: 500px;
   position: relative;
 }
 .price-cards__bg1, .price-cards__bg2 {
-  background-color: var(--color-faded);
+  background-color: var(--color-faded2);
   height: 50%;
-  padding-top: var(--space-2xl);
-  position: absolute;
   left: 0;
   right: 0;
+  padding-top: var(--space-2xl);
+  position: absolute;
   top: 0;
   z-index: -10;
 }
 .price-cards__bg1 {
   padding-top: var(--space-2xl);
 }
-.price-cards__bg1 {
-  background-color: var(--color-bg);
-}
 .price-cards__wrapper {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: var(--space-2xl) var(--space-xl);
 }
+.price-cards__card-header, .price-cards__tier-name, .price-cards__tier-price {
+  font-size: var(--text-sm);
+}
+.price-cards__card-header {
+  margin-bottom: var(--space-lg);
+}
 .price-cards__tier {
-  margin: auto;
+  max-width: 300px;
   padding: var(--space-sm) 0;
   width: 100%;
 }
 .price-cards__tier-name, .price-cards__tier-price, .price-cards__card-header {
   text-align: center;
 }
+.price-cards--bold {
+  font-weight: 700;
+}
+.price-cards__tier-name {
+  font-weight: 700;
+  text-transform: uppercase;
+}
 .price-cards__tier-price, .price-cards__features {
   margin-bottom: var(--space-sm);
 }
 .price-cards__features {
-  padding-left: var(--space-lg);
+  margin: auto;
+  width: 70%;
+}
+.price-cards__feature {
+  font-size: var(--text-xs);
+  padding-bottom: var(--space-md);
+  text-transform: capitalize;
 }
 .price-cards__link {
   display: block;
+  font-size: var(--text-xs);
+  font-weight: 600;
   margin-top: var(--space-lg);
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--space-sm) var(--space-xl);
+  text-align: center;
+  text-transform: uppercase;
+  width: 85%;
 }
-.price-cards .tier-pro {
+.price-cards__card {
+  border-radius: var(--border-radius-half);
+  height: 350px;
+  padding: var(--space-sm);
+}
+.price-cards .tier-pro .price-cards__card {
   background-color: var(--color-bg);
-  grid-column: span 2;
-  height: 100%;
+  border: var(--border-thick);
 }
-.price-cards .tier-basic {
-  background-color: var(--color-faded);
-  height: 80%;
+.price-cards .tier-pro .price-cards__tier-name {
+  color: var(--color-primary);
 }
-.price-cards .tier-enterprise {
+.price-cards .tier-pro .price-cards__link {
   background-color: var(--color-primary);
   color: var(--color-bg);
-  height: 80%;
+  background-color: var(--color-primary);
+  border: var(--border-thin);
+  color: var(--color-bg);
+}
+.price-cards .tier-pro .price-cards__link:hover {
+  background-color: var(--color-secondary);
+  transition: all 100ms ease-in-out;
+}
+.price-cards .tier-basic .price-cards__card {
+  background-color: var(--color-faded);
+}
+.price-cards .tier-basic .price-cards__link {
+  background-color: var(--color-primary);
+  border: var(--border-thin);
+  color: var(--color-bg);
+}
+.price-cards .tier-basic .price-cards__link:hover {
+  background-color: var(--color-secondary);
+  transition: all 100ms ease-in-out;
+}
+.price-cards .tier-enterprise .price-cards__card {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+.price-cards .tier-enterprise .price-cards__link {
+  border: var(--border-thin);
+  background-color: var(--color-bg);
+  border: var(--border-thin);
+  color: var(--color-primary);
+}
+.price-cards .tier-enterprise .price-cards__link:hover {
+  background-color: var(--color-off-bg);
+  transition: all 100ms ease-in-out;
+}
+.price-cards .tier-enterprise .price-cards__tier-price,
+.price-cards .tier-enterprise .price-cards__tier-name {
+  color: var(--color-bg);
 }
 
 /*# sourceMappingURL=main.css.map */
