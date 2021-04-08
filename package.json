@@ -6,10 +6,17 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn run snowpack dev",
-    "build": "yarn run snowpack build",
-    "sass": "sass --watch src/main.scss src/main.css"
+    "build": "yarn run snowpack build && yarn postcss",
+    "sass": "sass --watch src/scss/main.scss src/css/main.css",
+    "postcss": "postcss -o build/src/css/main.css build/src/css/main.css"
   },
   "devDependencies": {
+    "@snowpack/plugin-postcss": "^1.2.2",
+    "@snowpack/plugin-webpack": "^2.3.1",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.9",
+    "postcss-cli": "^8.3.1",
+    "postcss-discard-duplicates": "^4.0.2",
     "sass": "^1.32.8",
     "snowpack": "^3.2.2"
   }
