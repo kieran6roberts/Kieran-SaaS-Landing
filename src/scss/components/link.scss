@@ -1,0 +1,10 @@
+.link {
+  @include m.link-secondary;
+  display: block;
+  margin: auto;
+  padding: var(--space-sm) var(--space-xl);
+  width: max-content;
+  &:hover {
+    @include m.hover-secondary;
+  }
+}

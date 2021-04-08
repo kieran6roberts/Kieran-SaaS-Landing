@@ -1,0 +1,145 @@
+@use "../base/mixins.scss" as m;
+@import "../base/variables.scss";
+
+// main nav
+.nav {
+  align-items: center;
+  background-color: var(--color-primary);
+  display: flex;
+  padding: var(--space-xs) var(--space-lg);
+  position: relative;
+  z-index: 10;
+
+  @media only screen and (min-width: "1150px") {
+    padding: var(--space-xs) var(--space-xl);
+  }
+
+  &__logo-text,
+  &__logo-image {
+    display: block;
+  }
+
+  &__logo-image {
+    margin-right: var(--space-xs);
+  }
+
+  &__logo {
+    color: var(--color-bg);
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      @include m.hover-primary;
+    }
+  }
+
+  &__logo,
+  &__link {
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  &__items {
+    display: none;
+    margin-left: auto;
+    visibility: hidden;
+
+    @media only screen and (min-width: "768px") {
+      display: flex;
+      visibility: visible;
+    }
+  }
+
+  &__item {
+    color: var(--color-primary);
+    content: "*";
+
+    &__link {
+      visibility: hidden;
+
+      @media only screen and (min-width: "768px") {
+        visibility: visible;
+      }
+    }
+
+    &:first-child {
+      &:hover {
+        @include m.hover-primary;
+
+        .nav__link {
+          color: var(--color-off-bg);
+        }
+      }
+    }
+
+    &:last-child {
+      background-color: var(--color-bg);
+      margin-left: var(--space-xl);
+
+      &:hover {
+        @include m.hover-secondary;
+
+        .nav__link {
+          color: var(--color-primary);
+        }
+      }
+    }
+
+    .link-login {
+      color: var(--color-bg);
+    }
+
+    .link-account {
+      color: var(--color-secondary);
+    }
+  }
+
+  &__link {
+    display: block;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  &__mobile {
+    background-color: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 1.6rem;
+    margin-left: auto;
+    margin-right: var(--space-sm);
+    position: relative;
+    width: 1.6rem;
+    visibility: visible;
+
+    @media only screen and (min-width: "768px") {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &__mobile--span {
+    background-color: var(--color-bg);
+    display: block;
+    height: 0.1rem;
+    width: 100%;
+  }
+
+  &__mobile--check {
+    cursor: pointer;
+    height: 1.6rem;
+    right: 1.9rem;
+    top: 0.8rem;
+    position: absolute;
+    opacity: 0;
+    width: 1.8rem;
+
+    @media only screen and (min-width: "768px") {
+      display: none;
+      visibility: hidden;
+    }
+
+    &:checked ~ .sidebar {
+      transform: translateY(0%);
+    }
+  }
+}

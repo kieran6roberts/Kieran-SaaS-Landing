@@ -1,0 +1,43 @@
+@use "../base/mixins.scss" as m;
+@import "../base/variables.scss";
+
+// mobile nav
+.sidebar {
+  background-color: var(--color-primary);
+  padding: var(--space-sm) 0;
+  position: absolute;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  transform: translateY(-150%);
+  transition: transform 1000ms ease;
+  z-index: -10;
+
+  @media only screen and (min-width: "768px") {
+    display: none;
+    visibility: hidden;
+  }
+
+  &__items {
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+    width: 40%;
+  }
+
+  &__item {
+    @include m.link-secondary;
+    color: var(--color-primary);
+    content: "*";
+    margin: var(--space-sm) 0;
+
+    &:hover {
+      @include m.hover-secondary;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: var(--space-xs) var(--space-md);
+  }
+}
