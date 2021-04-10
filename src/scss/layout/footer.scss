@@ -34,7 +34,7 @@
 
   &__items {
     align-self: center;
-    grid-column: span 2;
+    grid-column: span 3;
     grid-row: 1;
 
     @media only screen and (min-width: "768px") {
@@ -42,17 +42,17 @@
     }
   }
 
-  &__items-header {
-    color: var(--color-text);
-    font-size: 0.9em;
-    font-weight: 600;
-    text-transform: capitalize;
-  }
-
   &__item {
     color: var(--color-faded2);
     content: "*";
     margin: var(--space-sm) 0;
+  }
+
+  &__item-header {
+    color: var(--color-text);
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: capitalize;
   }
 
   &__link {

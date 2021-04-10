@@ -708,7 +708,7 @@ p {
 .sidebar__link {
   color: var(--color-text);
   display: block;
-  padding: var(--space-xs) var(--space-md);
+  padding: var(--space-xs) var(--space-lg);
 }
 .sidebar__link:hover {
   background-color: var(--color-off-bg);
@@ -801,7 +801,7 @@ p {
 }
 .footer__items {
   align-self: center;
-  grid-column: span 2;
+  grid-column: span 3;
   grid-row: 1;
 }
 @media only screen and (min-width: 768px) {
@@ -809,16 +809,16 @@ p {
     grid-column: span 1;
   }
 }
-.footer__items-header {
-  color: var(--color-text);
-  font-size: 0.9em;
-  font-weight: 600;
-  text-transform: capitalize;
-}
 .footer__item {
   color: var(--color-faded2);
   content: "*";
   margin: var(--space-sm) 0;
+}
+.footer__item-header {
+  color: var(--color-text);
+  font-size: 0.9em;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 .footer__link {
   color: var(--color-text);
@@ -1111,7 +1111,12 @@ p {
   background-color: var(--color-bg);
   border: var(--border-thick);
   position: relative;
-  width: 325px;
+  width: 250px;
+}
+@media only screen and (min-width: 350px) {
+  .price-cards .tier-pro .price-cards__card {
+    width: 320px;
+  }
 }
 @media only screen and (min-width: 1800px) {
   .price-cards .tier-pro .price-cards__card {
@@ -1121,7 +1126,12 @@ p {
 .price-cards .tier-pro .price-cards__star {
   position: absolute;
   top: -2.4rem;
-  right: -2.4rem;
+  right: 0rem;
+}
+@media only screen and (min-width: 420px) {
+  .price-cards .tier-pro .price-cards__star {
+    right: -2.4rem;
+  }
 }
 .price-cards .tier-pro .price-cards__tier-name {
   color: var(--color-primary);

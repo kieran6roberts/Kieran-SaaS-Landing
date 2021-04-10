@@ -301,7 +301,11 @@
       background-color: var(--color-bg);
       border: var(--border-thick);
       position: relative;
-      width: 325px;
+      width: 250px;
+
+      @media only screen and (min-width: "350px") {
+        width: 320px;
+      }
 
       @media only screen and (min-width: "1800px") {
         width: 600px;
@@ -311,7 +315,11 @@
     .price-cards__star {
       position: absolute;
       top: -2.4rem;
-      right: -2.4rem;
+      right: 0rem;
+
+      @media only screen and (min-width: "420px") {
+        right: -2.4rem;
+      }
     }
 
     .price-cards__tier-name {

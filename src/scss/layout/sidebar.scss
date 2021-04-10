@@ -48,7 +48,7 @@
   &__link {
     color: var(--color-text);
     display: block;
-    padding: var(--space-xs) var(--space-md);
+    padding: var(--space-xs) var(--space-lg);
 
     &:hover {
       @include m.hover-secondary;
