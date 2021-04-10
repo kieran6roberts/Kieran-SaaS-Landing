@@ -7,7 +7,6 @@
   display: grid;
   font-size: var(--text-xs);
   grid-template-columns: repeat(5, 1fr);
-  height: 250px;
   padding: var(--space-lg);
   position: absolute;
   width: 100%;
@@ -24,6 +23,10 @@
       grid-column: span 1;
       grid-row: 1;
       margin-bottom: 0;
+    }
+
+    @media only screen and (min-width: "1600px") {
+      padding: var(--space-xl);
     }
   }
 
@@ -63,15 +66,21 @@
   }
 
   &__illustration {
-    display: none;
-    visibility: hidden;
-    position: absolute;
     bottom: 0;
-    right: 10%;
+    display: none;
+    position: absolute;
+    right: 5%;
+    visibility: hidden;
+    width: 300px;
 
     @media only screen and (min-width: "900px") {
       display: block;
       visibility: visible;
+    }
+
+    @media only screen and (min-width: "1800px") {
+      width: 550px;
+      right: 0;
     }
   }
 }
