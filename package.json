@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "yarn run snowpack dev",
-    "build": "yarn run snowpack build && yarn postcss",
+    "build": "yarn run snowpack build && yarn run:postcss",
     "watch:sass": "sass --watch src/scss/main.scss src/css/main.css",
     "run:postcss": "postcss -o build/src/css/main.css build/src/css/main.css"
   },
