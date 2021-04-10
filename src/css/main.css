@@ -460,7 +460,7 @@ p {
   margin-left: auto;
   visibility: hidden;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 850px) {
   .nav__items {
     display: flex;
     visibility: visible;
@@ -478,16 +478,18 @@ p {
     visibility: visible;
   }
 }
-.nav__item:first-child:hover {
+.nav__item:not(:last-child):hover {
   background-color: var(--color-secondary);
   transition: all 100ms ease-in-out;
 }
-.nav__item:first-child:hover .nav__link {
+.nav__item:not(:last-child):hover .nav__link {
   color: var(--color-off-bg);
+}
+.nav__item:not(:first-child) {
+  margin-left: var(--space-xl);
 }
 .nav__item:last-child {
   background-color: var(--color-bg);
-  margin-left: var(--space-xl);
 }
 .nav__item:last-child:hover {
   background-color: var(--color-off-bg);
@@ -519,7 +521,7 @@ p {
   width: 1.6rem;
   visibility: visible;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 850px) {
   .nav__mobile {
     display: none;
     visibility: hidden;
@@ -984,6 +986,11 @@ p {
     height: 800px;
   }
 }
+@media only screen and (min-width: 1600px) {
+  .service .background-2 {
+    height: 800px;
+  }
+}
 .service .bg-2 {
   right: 0;
   transform: scaleX(-1);
@@ -1106,6 +1113,11 @@ p {
   position: relative;
   width: 325px;
 }
+@media only screen and (min-width: 1800px) {
+  .price-cards .tier-pro .price-cards__card {
+    width: 600px;
+  }
+}
 .price-cards .tier-pro .price-cards__star {
   position: absolute;
   top: -2.4rem;
@@ -1135,8 +1147,12 @@ p {
 }
 .price-cards .tier-basic .price-cards__card {
   background-color: var(--color-faded);
-  height: 325px;
   width: 275px;
+}
+@media only screen and (min-width: 1800px) {
+  .price-cards .tier-basic .price-cards__card {
+    width: 500px;
+  }
 }
 .price-cards .tier-basic .price-cards__link {
   background-color: var(--color-primary);
@@ -1153,8 +1169,12 @@ p {
 .price-cards .tier-enterprise .price-cards__card {
   background-color: var(--color-primary);
   color: var(--color-bg);
-  height: 325px;
   width: 275px;
+}
+@media only screen and (min-width: 1800px) {
+  .price-cards .tier-enterprise .price-cards__card {
+    width: 500px;
+  }
 }
 .price-cards .tier-enterprise .price-cards__link {
   border: var(--border-thin);
@@ -1179,9 +1199,20 @@ p {
   padding: var(--space-xl) var(--space-sm) var(--space-lg);
   text-align: center;
 }
+@media only screen and (min-width: 1600px) {
+  .review__wrapper {
+    padding: var(--space-2xl) 0;
+  }
+}
 .review__header {
   color: var(--color-bg);
   font-size: var(--text-xl);
+}
+@media only screen and (min-width: 1600px) {
+  .review__header {
+    margin: auto;
+    width: 75%;
+  }
 }
 .review__description {
   color: var(--color-bg);
@@ -1258,6 +1289,12 @@ p {
     left: 25%;
     top: 4.5rem;
     margin: 0;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .review-me__image-wrapper {
+    height: 400px;
+    width: 400px;
   }
 }
 .review-me__quote {

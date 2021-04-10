@@ -148,6 +148,12 @@
     }
   }
 
+  .background-2 {
+    @media only screen and (min-width: "1600px") {
+      height: 800px;
+    }
+  }
+
   .bg-2 {
     right: 0;
     transform: scaleX(-1);
@@ -296,6 +302,10 @@
       border: var(--border-thick);
       position: relative;
       width: 325px;
+
+      @media only screen and (min-width: "1800px") {
+        width: 600px;
+      }
     }
 
     .price-cards__star {
@@ -329,8 +339,11 @@
 
     .price-cards__card {
       background-color: var(--color-faded);
-      height: 325px;
       width: 275px;
+
+      @media only screen and (min-width: "1800px") {
+        width: 500px;
+      }
     }
 
     .price-cards__link {
@@ -347,8 +360,11 @@
     .price-cards__card {
       background-color: var(--color-primary);
       color: var(--color-bg);
-      height: 325px;
       width: 275px;
+
+      @media only screen and (min-width: "1800px") {
+        width: 500px;
+      }
     }
 
     .price-cards__link {
@@ -376,11 +392,18 @@
     row-gap: var(--space-xl);
     padding: var(--space-xl) var(--space-sm) var(--space-lg);
     text-align: center;
+    @media only screen and (min-width: "1600px") {
+      padding: var(--space-2xl) 0;
+    }
   }
 
   &__header {
     color: var(--color-bg);
     font-size: var(--text-xl);
+    @media only screen and (min-width: "1600px") {
+      margin: auto;
+      width: 75%;
+    }
   }
 
   &__description {
@@ -461,6 +484,11 @@
         left: 25%;
         top: 4.5rem;
         margin: 0;
+      }
+
+      @media only screen and (min-width: "1600px") {
+        height: 400px;
+        width: 400px;
       }
     }
 

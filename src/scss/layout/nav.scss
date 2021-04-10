@@ -47,7 +47,7 @@
     margin-left: auto;
     visibility: hidden;
 
-    @media only screen and (min-width: "768px") {
+    @media only screen and (min-width: "850px") {
       display: flex;
       visibility: visible;
     }
@@ -65,7 +65,7 @@
       }
     }
 
-    &:first-child {
+    &:not(:last-child) {
       &:hover {
         @include m.hover-primary;
 
@@ -75,9 +75,12 @@
       }
     }
 
+    &:not(:first-child) {
+      margin-left: var(--space-xl);
+    }
+
     &:last-child {
       background-color: var(--color-bg);
-      margin-left: var(--space-xl);
 
       &:hover {
         @include m.hover-secondary;
@@ -115,7 +118,7 @@
     width: 1.6rem;
     visibility: visible;
 
-    @media only screen and (min-width: "768px") {
+    @media only screen and (min-width: "850px") {
       display: none;
       visibility: hidden;
     }
