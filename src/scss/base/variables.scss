@@ -9,17 +9,17 @@
   --color-off-text: hsl(0, 0%, 25%);
 
   --text-base: 0.9rem;
-  --text-scale: 1.1;
+  --text-scale: 1.2;
 
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
     1.2vw,
-    calc(var(--text-base) * var(--text-scale) * 1.5)
+    calc(var(--text-base) * var(--text-scale) * 1.8)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
     1.5vw,
-    calc(var(--text-xs) * var(--text-scale) * 1.8)
+    calc(var(--text-xs) * var(--text-scale) * 2)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),

@@ -103,16 +103,18 @@
     src="./public/images/header.svg"
     >
     <header class="hero">
-        <img
-        alt="illustration character setting off on adventure towards the mountains with a backpack"
-        class="hero__image"
-        height="525px"
-        src="./public/images/undraw-landscape.svg"
-        width="525px"
-        >
+        <div class="hero__image-wrapper">
+            <img
+            alt="illustration character setting off on adventure towards the mountains with a backpack"
+            class="hero__image"
+            height="95%"
+            src="./public/images/undraw-landscape.svg"
+            width="100%"
+            >
+        </div>
         <div class="hero__content">
             <h1 class="hero__heading">
-                Some inspirational header goes here
+                Welcome to my very inspirational product.
             </h1>
             <p class="hero__description">
                 This is the longer description that gives the viewer the overview of the main features of whatever it is I’m trying to
@@ -128,7 +130,7 @@
             class="hero__cta" 
             href="/"
             >
-                somewhere
+                sign up
             </a>
         </div>
     </header>
@@ -138,13 +140,15 @@
     >
         <section class="service">
             <div class="service__wrapper">
-                <img 
-                alt="background oval shape that sits beneath each service feature"
-                class="service__background bg-1"
-                height="500px"
-                src="./public/images/Rectangle.svg"
-                width="800px"
-                >
+                <div class="service__background-wrapper bg-1">
+                    <img 
+                    alt="background oval shape that sits beneath each service feature"
+                    class="service__background"
+                    height="500px"
+                    src="./public/images/Rectangle.svg"
+                    width="100%"
+                    >
+                </div>
                 <article class="service__article">
                     <p class="service__sub-header">
                         The best for you
@@ -154,18 +158,21 @@
                     </h2>
                     <p class="service__description">
                         This is a slightly longer description of the point I’m trying to make 
-                        including the first feature I think you'll like
+                        including the first feature I think you'll like. I go into a little detail 
+                        about the feature and wow the reader into wanting to know more.
                     </p>
                 </article>
             </div>
             <div class="service__wrapper">
-                <img 
-                alt="background oval shape that sits beneath each service feature" 
-                class="service__background bg-2"
-                height="500px"
-                src="./public/images/Rectangle.svg" 
-                width="800px"
-                >
+                <div class="service__background-wrapper bg-2">
+                    <img 
+                    alt="background oval shape that sits beneath each service feature" 
+                    class="service__background"
+                    height="500px"
+                    src="./public/images/Rectangle.svg" 
+                    width="100%"
+                    >
+                </div>
                 <article class="service__article middle-article">
                     <p class="service__sub-header">
                         You know you want to
@@ -174,18 +181,22 @@
                         Another amazing services we could provide you.
                     </h2>
                     <p class="service__description">
-                        This is a slightly longer description of the point I’m trying to make to convince you to try it out.
+                        This is a slightly longer description of the second point I’m trying to make to convince you to try it out.
+                        This feature is just as good as the first and by now your I've almost convinced you. Just
+                        one more amazing feature and your in.
                     </p>
                 </article>
             </div>
             <div class="service__wrapper">
-                <img 
-                alt="background oval shape that sits beneath each service feature" 
-                class="service__background bg-3"
-                height="500px"
-                src="./public/images/Rectangle.svg" 
-                width="800px"
-                >
+                <div class="service__background-wrapper bg-3">
+                    <img 
+                    alt="background oval shape that sits beneath each service feature" 
+                    class="service__background bg-3"
+                    height="500px"
+                    src="./public/images/Rectangle.svg" 
+                    width="100%"
+                    >
+                </div>
                 <article class="service__article">
                     <p class="service__sub-header">
                         C’mon you know you want to
@@ -194,7 +205,9 @@
                         This is the last incredible service we can offer you so take it
                     </h2>
                     <p class="service__description">
-                        This is a slightly longer description of the point I’m trying to make in order to convince you.
+                        This is a slightly longer description of the final point I’m trying to make in order to convince you.
+                        Right now you're itching to get started and want to know about the pricing structure. 
+                        Fortuantely for you what is exactly what is coming next.
                     </p>
                 </article>
             </div>
@@ -222,7 +235,7 @@
                     features available checkout the link below.
                 </p>
                 <a 
-                class="hero__cta" 
+                class="pricing__cta link" 
                 href="#"
                 >
                     learn more
@@ -386,7 +399,7 @@
         <div class="footer__brand">
   
             <span class="footer__brand-text">
-                brand <br>@2021 brand
+                Kieran's SaaS Landing <br>@2021 Kieran's SaaS Landing
             </span>
         </div>
         <ul class="footer__items">

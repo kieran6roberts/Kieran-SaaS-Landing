@@ -8,16 +8,16 @@
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
   --text-base: 0.9rem;
-  --text-scale: 1.1;
+  --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
     1.2vw,
-    calc(var(--text-base) * var(--text-scale) * 1.5)
+    calc(var(--text-base) * var(--text-scale) * 1.8)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
     1.5vw,
-    calc(var(--text-xs) * var(--text-scale) * 1.8)
+    calc(var(--text-xs) * var(--text-scale) * 2)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
@@ -109,16 +109,16 @@ button {
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
   --text-base: 0.9rem;
-  --text-scale: 1.1;
+  --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
     1.2vw,
-    calc(var(--text-base) * var(--text-scale) * 1.5)
+    calc(var(--text-base) * var(--text-scale) * 1.8)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
     1.5vw,
-    calc(var(--text-xs) * var(--text-scale) * 1.8)
+    calc(var(--text-xs) * var(--text-scale) * 2)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
@@ -209,16 +209,16 @@ p {
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
   --text-base: 0.9rem;
-  --text-scale: 1.1;
+  --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
     1.2vw,
-    calc(var(--text-base) * var(--text-scale) * 1.5)
+    calc(var(--text-base) * var(--text-scale) * 1.8)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
     1.5vw,
-    calc(var(--text-xs) * var(--text-scale) * 1.8)
+    calc(var(--text-xs) * var(--text-scale) * 2)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
@@ -264,16 +264,16 @@ p {
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
   --text-base: 0.9rem;
-  --text-scale: 1.1;
+  --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
     1.2vw,
-    calc(var(--text-base) * var(--text-scale) * 1.5)
+    calc(var(--text-base) * var(--text-scale) * 1.8)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
     1.5vw,
-    calc(var(--text-xs) * var(--text-scale) * 1.8)
+    calc(var(--text-xs) * var(--text-scale) * 2)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
@@ -319,16 +319,16 @@ p {
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
   --text-base: 0.9rem;
-  --text-scale: 1.1;
+  --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
     1.2vw,
-    calc(var(--text-base) * var(--text-scale) * 1.5)
+    calc(var(--text-base) * var(--text-scale) * 1.8)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
     1.5vw,
-    calc(var(--text-xs) * var(--text-scale) * 1.8)
+    calc(var(--text-xs) * var(--text-scale) * 2)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
@@ -374,16 +374,16 @@ p {
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
   --text-base: 0.9rem;
-  --text-scale: 1.1;
+  --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
     1.2vw,
-    calc(var(--text-base) * var(--text-scale) * 1.5)
+    calc(var(--text-base) * var(--text-scale) * 1.8)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
     1.5vw,
-    calc(var(--text-xs) * var(--text-scale) * 1.8)
+    calc(var(--text-xs) * var(--text-scale) * 2)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
@@ -430,6 +430,11 @@ p {
 @media only screen and (min-width: 1150px) {
   .nav {
     padding: var(--space-xs) var(--space-xl);
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .nav {
+    padding: var(--space-md) var(--space-xl);
   }
 }
 .nav__logo-text, .nav__logo-image {
@@ -555,16 +560,16 @@ p {
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
   --text-base: 0.9rem;
-  --text-scale: 1.1;
+  --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
     1.2vw,
-    calc(var(--text-base) * var(--text-scale) * 1.5)
+    calc(var(--text-base) * var(--text-scale) * 1.8)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
     1.5vw,
-    calc(var(--text-xs) * var(--text-scale) * 1.8)
+    calc(var(--text-xs) * var(--text-scale) * 2)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
@@ -610,16 +615,16 @@ p {
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
   --text-base: 0.9rem;
-  --text-scale: 1.1;
+  --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
     1.2vw,
-    calc(var(--text-base) * var(--text-scale) * 1.5)
+    calc(var(--text-base) * var(--text-scale) * 1.8)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
     1.5vw,
-    calc(var(--text-xs) * var(--text-scale) * 1.8)
+    calc(var(--text-xs) * var(--text-scale) * 2)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
@@ -663,7 +668,7 @@ p {
   left: 0;
   right: 0;
   transform: translateY(-150%);
-  transition: transform 1000ms ease;
+  transition: transform 800ms ease;
   z-index: -10;
 }
 @media only screen and (min-width: 768px) {
@@ -685,14 +690,27 @@ p {
   color: var(--color-primary);
   content: "*";
   margin: var(--space-sm) 0;
+  opacity: 0;
+  visibility: hidden;
 }
 .sidebar__item:hover {
   background-color: var(--color-off-bg);
   transition: all 100ms ease-in-out;
 }
+.sidebar__item.open {
+  display: block;
+  opacity: 1;
+  transition: all 250ms ease-in-out 750ms;
+  visibility: visible;
+}
 .sidebar__link {
+  color: var(--color-text);
   display: block;
   padding: var(--space-xs) var(--space-md);
+}
+.sidebar__link:hover {
+  background-color: var(--color-off-bg);
+  transition: all 100ms ease-in-out;
 }
 
 :root {
@@ -705,16 +723,16 @@ p {
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
   --text-base: 0.9rem;
-  --text-scale: 1.1;
+  --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
     1.2vw,
-    calc(var(--text-base) * var(--text-scale) * 1.5)
+    calc(var(--text-base) * var(--text-scale) * 1.8)
   );
   --text-sm: clamp(
     calc(var(--text-xs) * var(--text-scale)),
     1.5vw,
-    calc(var(--text-xs) * var(--text-scale) * 1.8)
+    calc(var(--text-xs) * var(--text-scale) * 2)
   );
   --text-md: clamp(
     calc(var(--text-sm) * var(--text-scale)),
@@ -825,7 +843,6 @@ p {
   border: var(--border-thin);
   color: var(--color-primary);
   display: block;
-  margin: auto;
   padding: var(--space-sm) var(--space-xl);
   width: max-content;
 }
@@ -836,6 +853,7 @@ p {
 
 .background {
   position: absolute;
+  width: 100%;
   z-index: -10;
 }
 
@@ -847,6 +865,11 @@ p {
     display: grid;
     grid-template-columns: 45% 55%;
   }
+}
+.hero__image-wrapper {
+  display: grid;
+  place-items: center;
+  width: 100%;
 }
 .hero__image {
   display: none;
@@ -865,7 +888,7 @@ p {
   padding-top: var(--space-xl);
 }
 .hero__heading {
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
 }
 .hero__description {
   margin-bottom: var(--space-xl);
@@ -885,6 +908,9 @@ p {
   transition: all 100ms ease-in-out;
 }
 .hero__cta:last-of-type {
+  background-color: var(--color-primary);
+  border: var(--border-thin);
+  color: var(--color-bg);
   display: none;
   visibility: hidden;
 }
@@ -892,11 +918,8 @@ p {
   background-color: var(--color-secondary);
   transition: all 100ms ease-in-out;
 }
-@media only screen and (min-width: 568px) {
+@media only screen and (min-width: 599px) {
   .hero__cta:last-of-type {
-    background-color: var(--color-primary);
-    border: var(--border-thin);
-    color: var(--color-bg);
     display: inline-block;
     visibility: visible;
   }
@@ -915,18 +938,28 @@ p {
   height: 500px;
   position: relative;
 }
+@media only screen and (min-width: 1600px) {
+  .service__wrapper {
+    height: 800px;
+  }
+}
 .service__wrapper:first-of-type, .service__wrapper:last-of-type {
   text-align: start;
+}
+.service__wrapper .middle-article {
+  text-align: end;
 }
 .service__article {
   align-content: center;
   display: grid;
   height: 100%;
-  padding: 0 var(--space-xl);
+  padding: 0 var(--space-md);
+  width: 90%;
 }
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 786px) {
   .service__article {
     width: 60%;
+    padding: 0 var(--space-xl);
   }
 }
 .service .middle-article {
@@ -941,10 +974,15 @@ p {
   font-size: var(--text-lg);
   margin-bottom: var(--space-md);
 }
-.service__background {
-  font-size: var(--text-sm);
+.service__background-wrapper {
   position: absolute;
+  width: 50%;
   z-index: -10;
+}
+@media only screen and (min-width: 1600px) {
+  .service__background {
+    height: 800px;
+  }
 }
 .service .bg-2 {
   right: 0;
@@ -962,11 +1000,18 @@ p {
 
 .pricing {
   background-color: var(--color-faded2);
-  padding-left: var(--space-xl);
+  padding-left: var(--space-md);
   padding-top: var(--space-md);
 }
-.pricing__article {
-  max-width: 75%;
+@media only screen and (min-width: 768px) {
+  .pricing {
+    padding-left: var(--space-xl);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .pricing__article {
+    max-width: 75%;
+  }
 }
 .pricing__sub-header {
   color: var(--color-primary);
@@ -978,7 +1023,6 @@ p {
   margin-bottom: var(--space-md);
 }
 .pricing__description {
-  font-size: var(--text-sm);
   margin-bottom: var(--space-xl);
 }
 
@@ -1003,7 +1047,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: var(--space-2xl) var(--space-xl) var(--space-3xl);
+  padding: var(--space-2xl) var(--space-xl) var(--space-2xl);
 }
 .price-cards__card-header, .price-cards__tier-name, .price-cards__tier-price {
   font-size: var(--text-sm);
@@ -1043,9 +1087,7 @@ p {
   display: block;
   font-size: var(--text-xs);
   font-weight: 600;
-  margin-top: var(--space-lg);
-  margin-left: auto;
-  margin-right: auto;
+  margin: var(--space-lg) auto;
   padding: var(--space-sm) var(--space-lg);
   text-align: center;
   text-transform: uppercase;
@@ -1061,7 +1103,6 @@ p {
 .price-cards .tier-pro .price-cards__card {
   background-color: var(--color-bg);
   border: var(--border-thick);
-  height: 400px;
   position: relative;
   width: 325px;
 }
@@ -1135,7 +1176,7 @@ p {
   background-color: var(--color-primary);
   display: grid;
   row-gap: var(--space-xl);
-  padding: var(--space-xl) var(--space-sm) 0;
+  padding: var(--space-xl) var(--space-sm) var(--space-lg);
   text-align: center;
 }
 .review__header {
@@ -1145,7 +1186,12 @@ p {
 .review__description {
   color: var(--color-bg);
   margin: auto;
-  width: 65%;
+  width: 90%;
+}
+@media only screen and (min-width: 768px) {
+  .review__description {
+    width: 65%;
+  }
 }
 .review__link {
   background-color: var(--color-bg);
@@ -1204,6 +1250,7 @@ p {
   height: 225px;
   margin: auto;
   position: relative;
+  top: 1rem;
   width: 225px;
 }
 @media only screen and (min-width: 900px) {
@@ -1215,17 +1262,21 @@ p {
 }
 .review-me__quote {
   font-style: italic;
+  margin-top: 1rem;
   padding: var(--space-lg) var(--space-md);
+  text-align: center;
 }
 @media only screen and (min-width: 900px) {
   .review-me__quote {
+    margin-top: 0;
     margin-left: auto;
+    text-align: left;
     width: 52%;
   }
 }
 
 .link-top {
-  margin-bottom: var(--space-2xl);
+  margin: auto auto var(--space-2xl);
 }
 
 /*# sourceMappingURL=main.css.map */
