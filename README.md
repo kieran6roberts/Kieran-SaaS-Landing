@@ -34,6 +34,44 @@ Live site is available here [kieran-sass-landing.netlify.app](https://kieran-sas
 - Snowpack 3.2.2
 - PostCSS 8.2.9
 
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+Go to the project directory
+
+```bash
+  cd Kieran-SaaS-Landing
+```
+
+Install dependencies
+
+```bash
+  yarn install
+```
+
+Start snowpack dev
+
+```bash
+  yarn start
+```
+
+Watch for style changes
+
+```bash
+  yarn watch:sass
+```
+
+Snowpack build
+
+```bash
+  yarn build
+```
+
 ## Lessons Learned
 
 The main takeaway from this project is how I was able to be a much more productive developer when working from a design. I usually end up iterating designs in the browser which leads to much wasted time.
@@ -45,6 +83,10 @@ This time however I designed my first page using Figma and was surprised at how 
 - Fill out some of the whitespace in the features section
 
 - No current plans to build out the rest of the site.
+
+## Feedback
+
+If you have any feedback, please reach out to me at [@Kieran6dev](https://twitter.com/Kieran6dev)
 
 ## Author
 
