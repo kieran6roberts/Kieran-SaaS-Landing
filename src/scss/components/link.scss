@@ -2,6 +2,7 @@
   @include m.link-secondary;
   display: block;
   padding: var(--space-sm) var(--space-xl);
+  text-transform: capitalize;
   width: max-content;
   &:hover {
     @include m.hover-secondary;

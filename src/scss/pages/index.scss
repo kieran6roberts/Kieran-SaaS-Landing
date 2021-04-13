@@ -16,6 +16,7 @@
   padding: 0 var(--space-md);
 
   @media only screen and (min-width: "1175px") {
+    align-items: center;
     display: grid;
     grid-template-columns: 45% 55%;
   }
@@ -39,12 +40,16 @@
   }
 
   &__content {
-    margin: 0 var(--space-lg);
     padding-top: var(--space-xl);
+    margin: 0 var(--space-lg);
+
+    @media only screen and (min-width: "1175px") {
+      padding-top: 0;
+    }
   }
 
   &__heading {
-    margin-bottom: var(--space-md);
+    margin-bottom: var(--space-xs);
 
     @media only screen and (min-width: "768px") {
       width: 85%;
@@ -112,14 +117,29 @@
     }
   }
 
+  &__feature-wrapper {
+    display: flex;
+    height: 100%;
+  }
+
+  &__image-wrapper {
+    display: none;
+    height: 100%;
+    padding: var(--space-xl);
+
+    @media only screen and (min-width: "900px") {
+      display: block;
+    }
+  }
+
   &__article {
     align-content: center;
     display: grid;
-    height: 100%;
+    margin: 0 var(--space-lg);
     padding: 0 var(--space-md);
     width: 90%;
 
-    @media only screen and (min-width: "786px") {
+    @media only screen and (min-width: "900px") {
       width: 60%;
       padding: 0 var(--space-xl);
     }
@@ -142,8 +162,11 @@
 
   &__background-wrapper {
     position: absolute;
-    width: 50%;
     z-index: -10;
+
+    @media only screen and (min-width: "900px") {
+      width: 50%;
+    }
   }
 
   &__background {
