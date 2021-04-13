@@ -45,10 +45,18 @@
 
   &__heading {
     margin-bottom: var(--space-md);
+
+    @media only screen and (min-width: "768px") {
+      width: 85%;
+    }
   }
 
   &__description {
     margin-bottom: var(--space-xl);
+
+    @media only screen and (min-width: "768px") {
+      width: 60%;
+    }
   }
 
   &__cta {
@@ -56,21 +64,21 @@
     text-transform: capitalize;
 
     &:first-of-type {
-      @include m.link-secondary;
-      margin-right: var(--space-xl);
+      @include m.link-primary;
+      margin-right: var(--space-sm);
 
       &:hover {
-        @include m.hover-secondary;
+        @include m.hover-primary;
       }
     }
 
     &:last-of-type {
-      @include m.link-primary;
+      @include m.link-secondary;
       display: none;
       visibility: hidden;
 
       &:hover {
-        @include m.hover-primary;
+        @include m.hover-secondary;
       }
 
       @media only screen and (min-width: "599px") {

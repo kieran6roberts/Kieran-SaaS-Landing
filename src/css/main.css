@@ -7,7 +7,7 @@
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
-  --text-base: 0.9rem;
+  --text-base: 0.8rem;
   --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
@@ -108,7 +108,7 @@ button {
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
-  --text-base: 0.9rem;
+  --text-base: 0.8rem;
   --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
@@ -208,7 +208,7 @@ p {
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
-  --text-base: 0.9rem;
+  --text-base: 0.8rem;
   --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
@@ -263,7 +263,7 @@ p {
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
-  --text-base: 0.9rem;
+  --text-base: 0.8rem;
   --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
@@ -318,7 +318,7 @@ p {
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
-  --text-base: 0.9rem;
+  --text-base: 0.8rem;
   --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
@@ -373,7 +373,7 @@ p {
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
-  --text-base: 0.9rem;
+  --text-base: 0.8rem;
   --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
@@ -561,7 +561,7 @@ p {
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
-  --text-base: 0.9rem;
+  --text-base: 0.8rem;
   --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
@@ -616,7 +616,7 @@ p {
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
-  --text-base: 0.9rem;
+  --text-base: 0.8rem;
   --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
@@ -724,7 +724,7 @@ p {
   --color-off-bg: #f3f1f1;
   --color-text: #000000;
   --color-off-text: hsl(0, 0%, 25%);
-  --text-base: 0.9rem;
+  --text-base: 0.8rem;
   --text-scale: 1.2;
   --text-xs: clamp(
     calc(var(--text-base) * var(--text-scale)),
@@ -903,32 +903,42 @@ p {
 .hero__heading {
   margin-bottom: var(--space-md);
 }
+@media only screen and (min-width: 768px) {
+  .hero__heading {
+    width: 85%;
+  }
+}
 .hero__description {
   margin-bottom: var(--space-xl);
+}
+@media only screen and (min-width: 768px) {
+  .hero__description {
+    width: 60%;
+  }
 }
 .hero__cta {
   padding: var(--space-sm) var(--space-xl);
   text-transform: capitalize;
 }
 .hero__cta:first-of-type {
-  background-color: var(--color-bg);
-  border: var(--border-thin);
-  color: var(--color-primary);
-  margin-right: var(--space-xl);
-}
-.hero__cta:first-of-type:hover {
-  background-color: var(--color-off-bg);
-  transition: all 100ms ease-in-out;
-}
-.hero__cta:last-of-type {
   background-color: var(--color-primary);
   border: var(--border-thin);
   color: var(--color-bg);
+  margin-right: var(--space-sm);
+}
+.hero__cta:first-of-type:hover {
+  background-color: var(--color-secondary);
+  transition: all 100ms ease-in-out;
+}
+.hero__cta:last-of-type {
+  background-color: var(--color-bg);
+  border: var(--border-thin);
+  color: var(--color-primary);
   display: none;
   visibility: hidden;
 }
 .hero__cta:last-of-type:hover {
-  background-color: var(--color-secondary);
+  background-color: var(--color-off-bg);
   transition: all 100ms ease-in-out;
 }
 @media only screen and (min-width: 599px) {
