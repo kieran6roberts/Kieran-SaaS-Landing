@@ -666,7 +666,7 @@ p {
   background-color: var(--color-primary);
   padding: var(--space-sm) 0;
   position: absolute;
-  top: 4rem;
+  top: 3.9rem;
   left: 0;
   right: 0;
   transform: translateY(-150%);
@@ -968,9 +968,6 @@ p {
 }
 .service__wrapper:first-of-type, .service__wrapper:last-of-type {
   text-align: start;
-}
-.service__wrapper .middle-article {
-  text-align: end;
 }
 .service__article {
   align-content: center;
